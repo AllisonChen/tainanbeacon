@@ -1,0 +1,317 @@
+{
+    "beacon" : {
+        "1" : {
+            "GPSlatitude" : 24.987637,
+            "GPSlongitude" : 121.576098,
+            "ID" : "1",
+            "Major" : "1",
+            "UUID" : "2A782241-52F4-4194-BF93-F7DE85F0D38C",
+            "minor" : "1",
+            "picture" : "value"
+        },
+        "2" : {
+            "GPSlatitude" : 24.987629,
+            "GPSlongitude" : 121.576227,
+            "ID" : "2",
+            "Major" : "2",
+            "UUID" : "2A782241-52F4-4194-BF93-F7DE85F0D38C",
+            "minor" : "2",
+            "picture" : "value"
+        },
+        "3" : {
+            "GPSlatitude" : 24.987541,
+            "GPSlongitude" : 121.576098,
+            "ID" : "3",
+            "Major" : "3",
+            "UUID" : "2A782241-52F4-4194-BF93-F7DE85F0D38C",
+            "minor" : "3",
+            "picture" : "value"
+        },
+        "4" : {
+            "GPSlatitude" : 24,
+            "GPSlongitude" : 121.5,
+            "ID" : "4",
+            "Major" : "4",
+            "UUID" : "2A782241-52F4-4194-BF93-F7DE85F0D38C",
+            "minor" : "4"
+        },
+        "10" : {
+            "GPSlatitude" : 23,
+            "GPSlongitude" : 122,
+            "ID" : "10",
+            "Major" : "10",
+            "UUID" : "2A782241-52F4-4194-BF93-F7DE85F0D38C",
+            "minor" : "10"
+        }
+    },
+    "route" : {
+        "1" : {
+            "Navigation Message" : {
+                "first" : "起點：地下道出入口，確認地下道在三點鐘方向，請沿地下道邊牆追跡，向前直行。",
+                "first_m" : 1,
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : "value",
+            "angle" : "value",
+            "from" : "1",
+            "to" : "2",
+            "trafficLight" : "null"
+        },
+        "2" : {
+            "Navigation Message" : {
+                "first" : "脫離地下道邊牆，直行10公尺找到無障礙電梯口。穿越時請注意機車與計程車出入。",
+                "first_m" : 1,
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : "value",
+            "angle" : "value",
+            "from" : "2",
+            "to" : "3",
+            "trafficLight" : "null"
+        },
+        "3" : {
+            "Navigation Message" : {
+                "first" : "請循著訊號聲向前找到電梯口。電梯口位於兩側鐵欄杆中間，按鍵在門框右側。",
+                "first_m" : 3,
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : "我已找到電梯口",
+            "angle" : "value",
+            "from" : "3",
+            "to" : "4",
+            "trafficLight" : "null"
+        },
+        "4" : {
+            "Navigation Message" : {
+                "first" : "出電梯後請右轉，進入人行通道，進入通道後請沿右側牆面追跡，直行30公尺抵達樓梯口。",
+                "first_m" : 1,
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : "value",
+            "angle" : "value",
+            "from" : "4",
+            "to" : "5",
+            "trafficLight" : "null"
+        },
+        "5" : {
+            "Navigation Message" : {
+                "first" : "請繼續直行15公尺，找到樓梯口後左轉。",
+                "first_m" : 2,
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : "value",
+            "angle" : "value",
+            "from" : "5",
+            "to" : "6",
+            "trafficLight" : "null"
+        },
+        "6" : {
+            "Navigation Message" : {
+                "first" : "請左轉進入電梯通道。",
+                "first_m" : 3,
+                "second" : "抵達電梯通道，請右轉向前找到電梯。按鍵在門框右側。",
+                "second_m" : 1
+            },
+            "Interaction Message" : "value",
+            "angle" : "value",
+            "from" : "6",
+            "to" : "7",
+            "trafficLight" : "null"
+        },
+        "7" : {
+            "Navigation Message" : {
+                "first" : "出電梯後，脫離左側欄杆，請沿著左側地面鐵製水溝蓋追跡，20公尺後抵達路口。",
+                "first_m" : 1,
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : "value",
+            "angle" : "value",
+            "from" : "7",
+            "to" : "8",
+            "trafficLight" : "null"
+        },
+        "8" : {
+            "Navigation Message" : {
+                "first" : "請繼續直行10公尺後抵達路口。",
+                "first_m" : 2,
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : "value",
+            "angle" : "value",
+            "from" : "8",
+            "to" : "9",
+            "trafficLight" : "null"
+        },
+        "9" : {
+            "Navigation Message" : {
+                "first" : "請向前找到路口號誌桿，注意人行道落差。",
+                "first_m" : 2,
+                "second" : "請轉向讓號誌桿為3點鐘方向，並確認9點鐘方向為騎樓邊牆，沿著邊牆向前至斑馬線起點。",
+                "second_m" : 1
+            },
+            "Interaction Message" : "value",
+            "angle" : "value",
+            "from" : "9",
+            "to" : "10",
+            "trafficLight" : "null"
+        },
+        "10" : {
+            "Navigation Message" : {
+                "first" : "請循聲抵達斑馬線起點，將身體背面對齊騎樓邊牆，面對馬路等待綠燈通知後前進。",
+                "first_m" : 2,
+                
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : {
+                "first" : "我已將身體背面對齊騎樓邊牆",
+                "second" : "請聽取對向第一陣車流聲後，穿越中山路，路長20公尺。"
+            },
+            "angle" : "value",
+            "from" : "10",
+            "to" : "11",
+            "trafficLight" : "綠燈35秒，請往前通過中山路，注意轉彎車流。"
+        },
+        "11" : {
+            "Navigation Message" : {
+                "first" : "注意轉彎車，請盡速抵達人行道，循著訊號聲找到南站公車服務亭。",
+                "first_m" : 6,
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : {
+                "first" : "已找到南站公車服務亭",
+                "second" : "請以身體右側沿著公車服務亭向前繞行找到服務員窗口。"
+            },
+            "angle" : "value",
+            "from" : "11",
+            "to" : "12",
+            "trafficLight" : "null"
+        },
+        "12" : {
+            "Navigation Message" : {
+                "first" : "抵達終點服務亭。請向站務人員尋求協助搭乘2號、19號公車，於無障礙福利之家下車。",
+                "first_m" : 1,
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : "我已將身體背面對齊騎樓邊牆",
+            "angle" : "value",
+            "from" : "12",
+            "to" : "12",
+            "trafficLight" : "null"
+        },
+        "13" : {
+            "Navigation Message" : {
+                "first" : "請循聲抵達斑馬線起點，將身體背面對齊騎樓邊牆，面對馬路等待綠燈通知後前進。",
+                "first_m" : 2,
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : "我已將身體背面對齊騎樓邊牆",
+            "angle" : "value",
+            "from" : "2",
+            "to" : "3",
+            "trafficLight" : "null"
+        },
+        "14" : {
+            "Navigation Message" : {
+                "first" : "請循聲抵達斑馬線起點，將身體背面對齊騎樓邊牆，面對馬路等待綠燈通知後前進。",
+                "first_m" : 2,
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : "我已將身體背面對齊騎樓邊牆",
+            "angle" : "value",
+            "from" : "2",
+            "to" : "3",
+            "trafficLight" : "null"
+        },
+        "15" : {
+            "Navigation Message" : {
+                "first" : "請循聲抵達斑馬線起點，將身體背面對齊騎樓邊牆，面對馬路等待綠燈通知後前進。",
+                "first_m" : 2,
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : "我已將身體背面對齊騎樓邊牆",
+            "angle" : "value",
+            "from" : "2",
+            "to" : "3",
+            "trafficLight" : "null"
+        },
+        "16" : {
+            "Navigation Message" : {
+                "first" : "請循聲抵達斑馬線起點，將身體背面對齊騎樓邊牆，面對馬路等待綠燈通知後前進。",
+                "first_m" : 2,
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : "我已將身體背面對齊騎樓邊牆",
+            "angle" : "value",
+            "from" : "2",
+            "to" : "3",
+            "trafficLight" : "null"
+        },
+        "17" : {
+            "Navigation Message" : {
+                "first" : "請循聲抵達斑馬線起點，將身體背面對齊騎樓邊牆，面對馬路等待綠燈通知後前進。",
+                "first_m" : 2,
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : "我已將身體背面對齊騎樓邊牆",
+            "angle" : "value",
+            "from" : "2",
+            "to" : "3",
+            "trafficLight" : "null"
+        },
+        "18" : {
+            "Navigation Message" : {
+                "first" : "請循聲抵達斑馬線起點，將身體背面對齊騎樓邊牆，面對馬路等待綠燈通知後前進。",
+                "first_m" : 2,
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : "我已將身體背面對齊騎樓邊牆",
+            "angle" : "value",
+            "from" : "2",
+            "to" : "3",
+            "trafficLight" : "null"
+        },
+        "19" : {
+            "Navigation Message" : {
+                "first" : "請循聲抵達斑馬線起點，將身體背面對齊騎樓邊牆，面對馬路等待綠燈通知後前進。",
+                "first_m" : 2,
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : "我已將身體背面對齊騎樓邊牆",
+            "angle" : "value",
+            "from" : "2",
+            "to" : "3",
+            "trafficLight" : "null"
+        },
+        "20" : {
+            "Navigation Message" : {
+                "first" : "請循聲抵達斑馬線起點，將身體背面對齊騎樓邊牆，面對馬路等待綠燈通知後前進。",
+                "first_m" : 2,
+                "second" : "value",
+                "second_m" : "value"
+            },
+            "Interaction Message" : "我已將身體背面對齊騎樓邊牆",
+            "angle" : "value",
+            "from" : "2",
+            "to" : "3",
+            "trafficLight" : "null"
+        }
+        
+    }
+}
