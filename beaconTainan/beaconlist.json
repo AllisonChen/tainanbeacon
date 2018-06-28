@@ -315,3 +315,274 @@
         
     }
 }
+{
+    "beacon": {
+        "1": {
+            "ID": 1,
+            "Major": 1,
+            "minor": 1,
+            "UUID": "2A782241-52F4-4194-BF93-F7DE85F0D38C",
+            "GPSlatitude": 24.987637,
+            "GPSlongitude": 121.576098,
+            "picture": "value"
+        },
+        "2": {
+            "ID": 1,
+            "Major": 1,
+            "minor": 1,
+            "UUID": "2A782241-52F4-4194-BF93-F7DE85F0D38C",
+            "GPSlatitude": 24.987637,
+            "GPSlongitude": 121.576098,
+            "picture": "value"
+        },
+        "3": {
+            "ID": 1,
+            "Major": 1,
+            "minor": 1,
+            "UUID": "2A782241-52F4-4194-BF93-F7DE85F0D38C",
+            "GPSlatitude": 24.987637,
+            "GPSlongitude": 121.576098,
+            "picture": "value"
+        },
+        "4": {
+            "ID": 1,
+            "Major": 1,
+            "minor": 1,
+            "UUID": "2A782241-52F4-4194-BF93-F7DE85F0D38C",
+            "GPSlatitude": 24.987637,
+            "GPSlongitude": 121.576098,
+            "picture": "value"
+        },
+        "5": {
+            "ID": 1,
+            "Major": 1,
+            "minor": 1,
+            "UUID": "2A782241-52F4-4194-BF93-F7DE85F0D38C",
+            "GPSlatitude": 24.987637,
+            "GPSlongitude": 121.576098,
+            "picture": "value"
+        }
+    },
+    "route": {
+        "1": {
+            "NaviMessage": {
+                "1": [
+                      1,
+                      -70,
+                      "起點：地下道出入口，確認地下道在三點鐘方向，請沿地下道邊牆追跡，向前直行。"
+                      ],
+                "2": [
+                      0,
+                      0,
+                      "null~"
+                      ]
+            },
+            "ActMessage": {
+                "1": "null~",
+                "2": "null~"
+            },
+            "trafficLight": "null~",
+            "from": 1,
+            "to": 2,
+            "angle": "value"
+        },
+        "2": {
+            "NaviMessage": {
+                "1": [
+                      1,
+                      -70,
+                      "起點：地下道出入口，確認地下道在三點鐘方向，請沿地下道邊牆追跡，向前直行。"
+                      ],
+                "2": [
+                      0,
+                      0,
+                      "null~"
+                      ]
+            },
+            "ActMessage": {
+                "1": "null~",
+                "2": "null~"
+            },
+            "trafficLight": "null~",
+            "from": 1,
+            "to": 2,
+            "angle": "value"
+        },
+        "3": {
+            "NaviMessage": {
+                "1": [
+                      1,
+                      -70,
+                      "起點：地下道出入口，確認地下道在三點鐘方向，請沿地下道邊牆追跡，向前直行。"
+                      ],
+                "2": [
+                      0,
+                      0,
+                      "null~"
+                      ]
+            },
+            "ActMessage": {
+                "1": "null~",
+                "2": "null~"
+            },
+            "trafficLight": "null~",
+            "from": 1,
+            "to": 2,
+            "angle": "value"
+        },
+        "4": {
+            "NaviMessage": {
+                "1": [
+                      1,
+                      -70,
+                      "起點：地下道出入口，確認地下道在三點鐘方向，請沿地下道邊牆追跡，向前直行。"
+                      ],
+                "2": [
+                      0,
+                      0,
+                      "null~"
+                      ]
+            },
+            "ActMessage": {
+                "1": "null~",
+                "2": "null~"
+            },
+            "trafficLight": "null~",
+            "from": 1,
+            "to": 2,
+            "angle": "value"
+        },
+        "5": {
+            "NaviMessage": {
+                "1": [
+                      1,
+                      -70,
+                      "起點：地下道出入口，確認地下道在三點鐘方向，請沿地下道邊牆追跡，向前直行。"
+                      ],
+                "2": [
+                      0,
+                      0,
+                      "null~"
+                      ]
+            },
+            "ActMessage": {
+                "1": "null~",
+                "2": "null~"
+            },
+            "trafficLight": "null~",
+            "from": 1,
+            "to": 2,
+            "angle": "value"
+        },
+        "6": {
+            "NaviMessage": {
+                "1": [
+                      1,
+                      -70,
+                      "起點：地下道出入口，確認地下道在三點鐘方向，請沿地下道邊牆追跡，向前直行。"
+                      ],
+                "2": [
+                      0,
+                      0,
+                      "null~"
+                      ]
+            },
+            "ActMessage": {
+                "1": "null~",
+                "2": "null~"
+            },
+            "trafficLight": "null~",
+            "from": 1,
+            "to": 2,
+            "angle": "value"
+        },
+        "7": {
+            "NaviMessage": {
+                "1": [
+                      1,
+                      -70,
+                      "起點：地下道出入口，確認地下道在三點鐘方向，請沿地下道邊牆追跡，向前直行。"
+                      ],
+                "2": [
+                      0,
+                      0,
+                      "null~"
+                      ]
+            },
+            "ActMessage": {
+                "1": "null~",
+                "2": "null~"
+            },
+            "trafficLight": "null~",
+            "from": 1,
+            "to": 2,
+            "angle": "value"
+        },
+        "8": {
+            "NaviMessage": {
+                "1": [
+                      1,
+                      -70,
+                      "起點：地下道出入口，確認地下道在三點鐘方向，請沿地下道邊牆追跡，向前直行。"
+                      ],
+                "2": [
+                      0,
+                      0,
+                      "null~"
+                      ]
+            },
+            "ActMessage": {
+                "1": "null~",
+                "2": "null~"
+            },
+            "trafficLight": "null~",
+            "from": 1,
+            "to": 2,
+            "angle": "value"
+        },
+        "9": {
+            "NaviMessage": {
+                "1": [
+                      1,
+                      -70,
+                      "起點：地下道出入口，確認地下道在三點鐘方向，請沿地下道邊牆追跡，向前直行。"
+                      ],
+                "2": [
+                      0,
+                      0,
+                      "null~"
+                      ]
+            },
+            "ActMessage": {
+                "1": "null~",
+                "2": "null~"
+            },
+            "trafficLight": "null~",
+            "from": 1,
+            "to": 2,
+            "angle": "value"
+        },
+        "10": {
+            "NaviMessage": {
+                "1": [
+                      1,
+                      -70,
+                      "起點：地下道出入口，確認地下道在三點鐘方向，請沿地下道邊牆追跡，向前直行。"
+                      ],
+                "2": [
+                      0,
+                      0,
+                      "null~"
+                      ]
+            },
+            "ActMessage": {
+                "1": "null~",
+                "2": "null~"
+            },
+            "trafficLight": "null~",
+            "from": 1,
+            "to": 2,
+            "angle": "value"
+        }
+    }
+}

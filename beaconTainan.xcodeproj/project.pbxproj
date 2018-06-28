@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		272C214620A2E92000A7ACB6 /* NaviMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C214520A2E92000A7ACB6 /* NaviMessage.swift */; };
+		272C214920A409FC00A7ACB6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272C214820A409FC00A7ACB6 /* AVFoundation.framework */; };
+		273F4B1220BFA41A007118D4 /* previewRouteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F4B1120BFA41A007118D4 /* previewRouteVC.swift */; };
+		273F4B1420BFA45D007118D4 /* startNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F4B1320BFA45D007118D4 /* startNavigationVC.swift */; };
+		273F4B1620BFA4D4007118D4 /* selectRouteTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F4B1520BFA4D4007118D4 /* selectRouteTVC.swift */; };
+		273F4B1820C15486007118D4 /* beaconlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 273F4B1720C15486007118D4 /* beaconlist.json */; };
+		273F4B1C20C6685D007118D4 /* beaconlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 273F4B1B20C6685D007118D4 /* beaconlist.plist */; };
+		273F4B1E20C7FF7B007118D4 /* route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F4B1D20C7FF7B007118D4 /* route.swift */; };
 		27CEF5822099D7D800B767E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEF5812099D7D800B767E8 /* AppDelegate.swift */; };
 		27CEF5842099D7D800B767E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEF5832099D7D800B767E8 /* ViewController.swift */; };
 		27CEF5872099D7D800B767E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CEF5852099D7D800B767E8 /* Main.storyboard */; };
-		27CEF58A2099D7D800B767E8 /* beaconTainan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27CEF5882099D7D800B767E8 /* beaconTainan.xcdatamodeld */; };
 		27CEF58C2099D7D800B767E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27CEF58B2099D7D800B767E8 /* Assets.xcassets */; };
 		27CEF58F2099D7D800B767E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CEF58D2099D7D800B767E8 /* LaunchScreen.storyboard */; };
 		27CEF59A2099D7D800B767E8 /* beaconTainanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEF5992099D7D800B767E8 /* beaconTainanTests.swift */; };
@@ -35,11 +42,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		272C214520A2E92000A7ACB6 /* NaviMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviMessage.swift; sourceTree = "<group>"; };
+		272C214820A409FC00A7ACB6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		273F4B1120BFA41A007118D4 /* previewRouteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = previewRouteVC.swift; sourceTree = "<group>"; };
+		273F4B1320BFA45D007118D4 /* startNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startNavigationVC.swift; sourceTree = "<group>"; };
+		273F4B1520BFA4D4007118D4 /* selectRouteTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectRouteTVC.swift; sourceTree = "<group>"; };
+		273F4B1720C15486007118D4 /* beaconlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beaconlist.json; sourceTree = "<group>"; };
+		273F4B1B20C6685D007118D4 /* beaconlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = beaconlist.plist; path = "../../Desktop/未命名檔案夾/beaconlist.plist"; sourceTree = "<group>"; };
+		273F4B1D20C7FF7B007118D4 /* route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = route.swift; sourceTree = "<group>"; };
 		27CEF57E2099D7D800B767E8 /* beaconTainan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beaconTainan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CEF5812099D7D800B767E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27CEF5832099D7D800B767E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		27CEF5862099D7D800B767E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		27CEF5892099D7D800B767E8 /* beaconTainan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = beaconTainan.xcdatamodel; sourceTree = "<group>"; };
 		27CEF58B2099D7D800B767E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27CEF58E2099D7D800B767E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27CEF5902099D7D800B767E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272C214920A409FC00A7ACB6 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		272C214720A409FB00A7ACB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				272C214820A409FC00A7ACB6 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		27CEF5752099D7D800B767E8 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +106,7 @@
 				27CEF5982099D7D800B767E8 /* beaconTainanTests */,
 				27CEF5A32099D7D800B767E8 /* beaconTainanUITests */,
 				27CEF57F2099D7D800B767E8 /* Products */,
+				272C214720A409FB00A7ACB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,12 +124,18 @@
 			isa = PBXGroup;
 			children = (
 				27CEF5812099D7D800B767E8 /* AppDelegate.swift */,
-				27CEF5832099D7D800B767E8 /* ViewController.swift */,
 				27CEF5852099D7D800B767E8 /* Main.storyboard */,
+				27CEF5832099D7D800B767E8 /* ViewController.swift */,
 				27CEF58B2099D7D800B767E8 /* Assets.xcassets */,
 				27CEF58D2099D7D800B767E8 /* LaunchScreen.storyboard */,
 				27CEF5902099D7D800B767E8 /* Info.plist */,
-				27CEF5882099D7D800B767E8 /* beaconTainan.xcdatamodeld */,
+				273F4B1520BFA4D4007118D4 /* selectRouteTVC.swift */,
+				273F4B1120BFA41A007118D4 /* previewRouteVC.swift */,
+				273F4B1320BFA45D007118D4 /* startNavigationVC.swift */,
+				273F4B1B20C6685D007118D4 /* beaconlist.plist */,
+				273F4B1720C15486007118D4 /* beaconlist.json */,
+				272C214520A2E92000A7ACB6 /* NaviMessage.swift */,
+				273F4B1D20C7FF7B007118D4 /* route.swift */,
 			);
 			path = beaconTainan;
 			sourceTree = "<group>";
@@ -235,6 +265,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273F4B1820C15486007118D4 /* beaconlist.json in Resources */,
+				273F4B1C20C6685D007118D4 /* beaconlist.plist in Resources */,
 				27CEF58F2099D7D800B767E8 /* LaunchScreen.storyboard in Resources */,
 				27CEF58C2099D7D800B767E8 /* Assets.xcassets in Resources */,
 				27CEF5872099D7D800B767E8 /* Main.storyboard in Resources */,
@@ -262,9 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27CEF58A2099D7D800B767E8 /* beaconTainan.xcdatamodeld in Sources */,
 				27CEF5842099D7D800B767E8 /* ViewController.swift in Sources */,
+				273F4B1E20C7FF7B007118D4 /* route.swift in Sources */,
+				273F4B1620BFA4D4007118D4 /* selectRouteTVC.swift in Sources */,
 				27CEF5822099D7D800B767E8 /* AppDelegate.swift in Sources */,
+				272C214620A2E92000A7ACB6 /* NaviMessage.swift in Sources */,
+				273F4B1220BFA41A007118D4 /* previewRouteVC.swift in Sources */,
+				273F4B1420BFA45D007118D4 /* startNavigationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,8 +465,10 @@
 		27CEF5AA2099D7D800B767E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79NFUR6WWD;
 				INFOPLIST_FILE = beaconTainan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = blindnavi.beaconTainan;
@@ -443,8 +481,10 @@
 		27CEF5AB2099D7D800B767E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 79NFUR6WWD;
 				INFOPLIST_FILE = beaconTainan/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = blindnavi.beaconTainan;
@@ -556,19 +596,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		27CEF5882099D7D800B767E8 /* beaconTainan.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				27CEF5892099D7D800B767E8 /* beaconTainan.xcdatamodel */,
-			);
-			currentVersion = 27CEF5892099D7D800B767E8 /* beaconTainan.xcdatamodel */;
-			path = beaconTainan.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 27CEF5762099D7D800B767E8 /* Project object */;
 }
