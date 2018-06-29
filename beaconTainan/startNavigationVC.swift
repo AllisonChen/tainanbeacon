@@ -12,15 +12,15 @@ let identifier   = "IUI"
 var trafficlightBool = false
 var lightBool = false
 
-var boolBeacons = [1201: false, 1: false, 2: false, 3: false, 4: false, 5: false, 6.3: false, 6.1: false, 7: false, 8: false, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
-var realtimeBeacons = [1201: -9999, 1: -9999, 2: -9999, 3: -9999, 4: -9999, 5: -9999, 6.3: -9999, 6.1: -9999, 7: -9999, 8: -9999, 9.2: -9999, 9.1: -9999, 10: -9999, 11: -9999, 12: -9999]
+var boolBeacons = [1201: false, 6001: false, 1: false, 2: false, 3: false, 4: false, 5: false, 6.3: false, 6.1: false, 7: false, 8: false, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
+var realtimeBeacons = [1201: -9999, 6001: -9999, 1: -9999, 2: -9999, 3: -9999, 4: -9999, 5: -9999, 6.3: -9999, 6.1: -9999, 7: -9999, 8: -9999, 9.2: -9999, 9.1: -9999, 10: -9999, 11: -9999, 12: -9999]
 
 /* data */
 var light = 0
 /* beaconNumber */
 var num = 0.0
 //var tainanBeacons = [1201: -9999, 15194: 3, 33749: 4]
-var rssiBeacons = [1201: -9999, 1: -9999, 2: -9999, 3: -9999, 4: -9999, 5: -9999, 6.3: -9999, 6.1: -9999, 7: -9999, 8: -9999, 9.2: -100, 9.1: -80, 10: -80, 11: -9999, 12: -9999]
+var rssiBeacons = [1201: -9999, 6001: -9999, 1: -9999, 2: -75, 3: -75, 4: -85, 5: -100, 6.3: -97, 6.1: -85, 7: -90, 8: -85, 9.2: -84, 9.1: -73, 10: -90, 11: -100, 12: -95]
 var messageBeacons = [1: "起點：地下道出入口，確認地下道在三點鐘方向，請沿地下道邊牆追跡，向前直行。",
                       2: "脫離地下道邊牆，直行 10公尺找到無障礙電梯口。穿越時請注意機車與計程車出入。",
                       3: "請循著訊號聲向前找到電梯口。電梯口位於兩側鐵欄杆中間，按鍵在門框右側。",
@@ -41,7 +41,9 @@ var messageBeacons = [1: "起點：地下道出入口，確認地下道在三點
                       11: "注意轉彎車，請盡速抵達人行道，循著訊號聲找到南站公車服務亭。",
                       11.7: "已找到南站公車服務亭",
                       11.8: "請以身體右側沿著公車服務亭向前繞行找到服務員窗口。",
-                      12: "抵達終點服務亭。請向站務人員尋求協助搭乘2號、19號公車，於無障礙福利之家下車。"
+                      12: "抵達終點服務亭。請向站務人員尋求協助搭乘2號、19號公車，於無障礙福利之家下車。",
+                      13: "抵達終點服務亭。請向站務人員尋求協助搭乘2號、19號公車，於無障礙福利之家下車。",
+                      14: "抵達終點服務亭。請向站務人員尋求協助搭乘2號、19號公車，於無障礙福利之家下車。"
                     ] as [Double : Any]
 
 var trafficlightString1 = "綠燈"
@@ -200,16 +202,14 @@ class startNavigationVC: UIViewController, CLLocationManagerDelegate, AVSpeechSy
         for beacon in beacons {
             print("!!!!!!!  locationManager  !!!!!!!")
             
-            
             /* major number to key number */
-            
             if beacon.major == 33749 {
-                print("4: " + String(beacon.rssi))
-                num = 10.0
+                print("test 4 : " + String(beacon.rssi))
+                num = 13
             }
             if beacon.major == 15194 {
-                print("3: " + String(beacon.rssi))
-                num = 9.1
+                print("test 3: " + String(beacon.rssi))
+                num = 14
             }
             switch beacon.major {
             case 5714:
@@ -240,7 +240,8 @@ class startNavigationVC: UIViewController, CLLocationManagerDelegate, AVSpeechSy
             default: break
             }
             
-            if beacon.major == 1201 {
+            /* 紅綠燈 1201 or 6001 */
+            if beacon.major == 6001 {
                 light = Int(beacon.minor)
                 if trafficlightBool == true {
                     if (light/256) == 1 {
@@ -259,7 +260,7 @@ class startNavigationVC: UIViewController, CLLocationManagerDelegate, AVSpeechSy
 //                            trafficlightBool = false
                         }
                         /* 最大秒數 */
-                        if (light%256) == 30 {
+                        if (light%256) == 40 {
                             syntesizer.speak(utterance)
                         }
                         if (light%256) == 1 {
@@ -323,55 +324,57 @@ class startNavigationVC: UIViewController, CLLocationManagerDelegate, AVSpeechSy
             case 2:
                 actionbutton.isHidden = true
                 naviLabel.text = messageBeacons[2] as? String
-                boolBeacons = [1201: false, 1: true, 2: false, 3: false, 4: false, 5: false, 6.3: false, 6.1: false, 7: false, 8: false, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
+//                for index in 1...5 {
+//                    boolBeacons[index] = false
+//                }
+                boolBeacons = [3: false, 4: false, 5: false, 6.3: false, 6.1: false, 7: false, 8: false, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
             case 3:
                 trafficAlert(bnum: 3)
                 naviLabel.text = messageBeacons[3] as? String
-                boolBeacons = [1201: false, 1: true, 2: true, 3: false, 4: false, 5: false, 6.3: false, 6.1: false, 7: false, 8: false, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
+                boolBeacons = [4: false, 5: false, 6.3: false, 6.1: false, 7: false, 8: false, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
             case 4:
                 actionbutton.isHidden = true
                 naviLabel.text = messageBeacons[4] as? String
-                boolBeacons = [1201: false, 1: true, 2: true, 3: true, 4: false, 5: false, 6.3: false, 6.1: false, 7: false, 8: false, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
+                boolBeacons = [5: false, 6.3: false, 6.1: false, 7: false, 8: false, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
             case 5:
                 actionbutton.isHidden = true
                 naviLabel.text = messageBeacons[5] as? String
-                boolBeacons = [1201: false, 1: true, 2: true, 3: true, 4: true, 5: false, 6.3: false, 6.1: false, 7: false, 8: false, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
+                boolBeacons = [6.3: false, 6.1: false, 7: false, 8: false, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
             case 6.3:
                 actionbutton.isHidden = true
                 naviLabel.text = messageBeacons[6.3] as? String
-                boolBeacons = [1201: false, 1: true, 2: true, 3: true, 4: true, 5: true, 6.3: false, 6.1: false, 7: false, 8: false, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
+                boolBeacons = [6.1: false, 7: false, 8: false, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
             case 6.1:
                 actionbutton.isHidden = true
                 naviLabel.text = messageBeacons[6.1] as? String
-                boolBeacons = [1201: false, 1: true, 2: true, 3: true, 4: true, 5: true, 6.3: true, 6.1: false, 7: false, 8: false, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
+                boolBeacons = [7: false, 8: false, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
             case 7:
                 actionbutton.isHidden = true
                 naviLabel.text = messageBeacons[7] as? String
-                boolBeacons = [1201: false, 1: true, 2: true, 3: true, 4: true, 5: true, 6.3: true, 6.1: true, 7: false, 8: false, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
+                boolBeacons = [8: false, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
             case 8:
                 actionbutton.isHidden = true
                 naviLabel.text = messageBeacons[8] as? String
-                boolBeacons = [1201: false, 1: true, 2: true, 3: true, 4: true, 5: true, 6.3: true, 6.1: true, 7: true, 8: false, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
+                boolBeacons = [9.2: false, 9.1: false, 10: false, 11: false, 12: false]
             case 9.2:
                 actionbutton.isHidden = true
                 naviLabel.text = messageBeacons[9.2] as? String
-                boolBeacons = [1201: false, 1: true, 2: true, 3: true, 4: true, 5: true, 6.3: true, 6.1: true, 7: true, 8: true, 9.2: false, 9.1: false, 10: false, 11: false, 12: false]
+                boolBeacons = [9.1: false, 10: false, 11: false, 12: false]
             case 9.1:
                 actionbutton.isHidden = true
                 naviLabel.text = messageBeacons[9.1] as? String
-                boolBeacons = [1201: false, 1: true, 2: true, 3: true, 4: true, 5: true, 6.3: true, 6.1: true, 7: true, 8: true, 9.2: true, 9.1: false, 10: false, 11: false, 12: false]
+                boolBeacons = [10: false, 11: false, 12: false]
             case 10.0:
                 trafficAlert(bnum: 10)
                 naviLabel.text = messageBeacons[10.0] as? String
-                boolBeacons = [1201: false, 1: true, 2: true, 3: true, 4: true, 5: true, 6.3: true, 6.1: true, 7: true, 8: true, 9.2: true, 9.1: true, 10: false, 11: false, 12: false]
+                boolBeacons = [11: false, 12: false]
             case 11.0:
                 trafficAlert(bnum: 11)
                 naviLabel.text = messageBeacons[11.0] as? String
-                boolBeacons = [1201: false, 1: true, 2: true, 3: true, 4: true, 5: true, 6.3: true, 6.1: true, 7: true, 8: true, 9.2: true, 9.1: true, 10: true, 11: false, 12: false]
+                boolBeacons = [12: false]
             case 12:
                 actionbutton.isHidden = true
                 naviLabel.text = messageBeacons[12] as? String
-                boolBeacons = [1201: false, 1: true, 2: true, 3: true, 4: true, 5: true, 6.3: true, 6.1: true, 7: true, 8: true, 9.2: true, 9.1: true, 10: true, 11: true, 12: false]
                 
             default: break
             }
