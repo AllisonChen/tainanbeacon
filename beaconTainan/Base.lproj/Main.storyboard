@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S8s-zQ-8mC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S8s-zQ-8mC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -136,7 +135,13 @@
                             <outlet property="delegate" destination="yiq-WQ-bee" id="w1u-Se-NAV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="路線" id="W4r-yp-WeZ" userLabel="back"/>
+                    <navigationItem key="navigationItem" title="路線" id="W4r-yp-WeZ" userLabel="back">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="oTB-1F-dao">
+                            <connections>
+                                <segue destination="80z-va-WtI" kind="show" id="SxK-LW-cEb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zok-5E-REc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,6 +194,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CY9-I1-elf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1229.5999999999999" y="509.59520239880067"/>
+        </scene>
+        <!--TtsVC-->
+        <scene sceneID="03H-Dq-6pB">
+            <objects>
+                <viewController id="80z-va-WtI" customClass="ttsVC" customModule="beaconTainan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m59-N3-7Gt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cxY-R7-dg3">
+                                <rect key="frame" x="16" y="122" width="345" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="ttsslider:" destination="80z-va-WtI" eventType="valueChanged" id="hAE-en-tYd"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZD-1X-ro2">
+                                <rect key="frame" x="18" y="200" width="138" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zBU-up-vWC">
+                                <rect key="frame" x="18" y="256" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="STh-bB-Cjt"/>
+                    </view>
+                    <connections>
+                        <outlet property="Label" destination="CZD-1X-ro2" id="svm-p7-gUl"/>
+                        <outlet property="Text" destination="zBU-up-vWC" id="ZDY-Vz-PIa"/>
+                        <outlet property="tts" destination="cxY-R7-dg3" id="2kq-K6-WAG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VAy-HQ-zCF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1229.5999999999999" y="-200.14992503748127"/>
         </scene>
         <!--Start NavigationVC-->
         <scene sceneID="yw5-dV-y18">

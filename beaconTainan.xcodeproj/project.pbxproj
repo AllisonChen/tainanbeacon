@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2728BA2720F0DAEE003867A6 /* ttsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2728BA2620F0DAEE003867A6 /* ttsVC.swift */; };
+		2728BA2920F0F3F1003867A6 /* List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2728BA2820F0F3F1003867A6 /* List.plist */; };
+		2728BA2B20F0FF05003867A6 /* file.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2728BA2A20F0FF05003867A6 /* file.txt */; };
 		272C214620A2E92000A7ACB6 /* NaviMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272C214520A2E92000A7ACB6 /* NaviMessage.swift */; };
 		272C214920A409FC00A7ACB6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272C214820A409FC00A7ACB6 /* AVFoundation.framework */; };
 		273F4B1220BFA41A007118D4 /* previewRouteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F4B1120BFA41A007118D4 /* previewRouteVC.swift */; };
 		273F4B1420BFA45D007118D4 /* startNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F4B1320BFA45D007118D4 /* startNavigationVC.swift */; };
 		273F4B1620BFA4D4007118D4 /* selectRouteTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F4B1520BFA4D4007118D4 /* selectRouteTVC.swift */; };
 		273F4B1820C15486007118D4 /* beaconlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 273F4B1720C15486007118D4 /* beaconlist.json */; };
-		273F4B1C20C6685D007118D4 /* beaconlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 273F4B1B20C6685D007118D4 /* beaconlist.plist */; };
 		273F4B1E20C7FF7B007118D4 /* route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F4B1D20C7FF7B007118D4 /* route.swift */; };
 		27CEF5822099D7D800B767E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEF5812099D7D800B767E8 /* AppDelegate.swift */; };
 		27CEF5842099D7D800B767E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CEF5832099D7D800B767E8 /* ViewController.swift */; };
@@ -42,13 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2728BA2620F0DAEE003867A6 /* ttsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ttsVC.swift; sourceTree = "<group>"; };
+		2728BA2820F0F3F1003867A6 /* List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = List.plist; sourceTree = "<group>"; };
+		2728BA2A20F0FF05003867A6 /* file.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = file.txt; sourceTree = "<group>"; };
 		272C214520A2E92000A7ACB6 /* NaviMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviMessage.swift; sourceTree = "<group>"; };
 		272C214820A409FC00A7ACB6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		273F4B1120BFA41A007118D4 /* previewRouteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = previewRouteVC.swift; sourceTree = "<group>"; };
 		273F4B1320BFA45D007118D4 /* startNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startNavigationVC.swift; sourceTree = "<group>"; };
 		273F4B1520BFA4D4007118D4 /* selectRouteTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectRouteTVC.swift; sourceTree = "<group>"; };
 		273F4B1720C15486007118D4 /* beaconlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beaconlist.json; sourceTree = "<group>"; };
-		273F4B1B20C6685D007118D4 /* beaconlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = beaconlist.plist; path = "../../Desktop/未命名檔案夾/beaconlist.plist"; sourceTree = "<group>"; };
 		273F4B1D20C7FF7B007118D4 /* route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = route.swift; sourceTree = "<group>"; };
 		27CEF57E2099D7D800B767E8 /* beaconTainan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beaconTainan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CEF5812099D7D800B767E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,10 +136,12 @@
 				273F4B1520BFA4D4007118D4 /* selectRouteTVC.swift */,
 				273F4B1120BFA41A007118D4 /* previewRouteVC.swift */,
 				273F4B1320BFA45D007118D4 /* startNavigationVC.swift */,
-				273F4B1B20C6685D007118D4 /* beaconlist.plist */,
 				273F4B1720C15486007118D4 /* beaconlist.json */,
 				272C214520A2E92000A7ACB6 /* NaviMessage.swift */,
 				273F4B1D20C7FF7B007118D4 /* route.swift */,
+				2728BA2620F0DAEE003867A6 /* ttsVC.swift */,
+				2728BA2A20F0FF05003867A6 /* file.txt */,
+				2728BA2820F0F3F1003867A6 /* List.plist */,
 			);
 			path = beaconTainan;
 			sourceTree = "<group>";
@@ -266,9 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				273F4B1820C15486007118D4 /* beaconlist.json in Resources */,
-				273F4B1C20C6685D007118D4 /* beaconlist.plist in Resources */,
 				27CEF58F2099D7D800B767E8 /* LaunchScreen.storyboard in Resources */,
 				27CEF58C2099D7D800B767E8 /* Assets.xcassets in Resources */,
+				2728BA2920F0F3F1003867A6 /* List.plist in Resources */,
+				2728BA2B20F0FF05003867A6 /* file.txt in Resources */,
 				27CEF5872099D7D800B767E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +303,7 @@
 			files = (
 				27CEF5842099D7D800B767E8 /* ViewController.swift in Sources */,
 				273F4B1E20C7FF7B007118D4 /* route.swift in Sources */,
+				2728BA2720F0DAEE003867A6 /* ttsVC.swift in Sources */,
 				273F4B1620BFA4D4007118D4 /* selectRouteTVC.swift in Sources */,
 				27CEF5822099D7D800B767E8 /* AppDelegate.swift in Sources */,
 				272C214620A2E92000A7ACB6 /* NaviMessage.swift in Sources */,
@@ -470,6 +478,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79NFUR6WWD;
 				INFOPLIST_FILE = beaconTainan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = blindnavi.beaconTainan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -486,6 +495,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79NFUR6WWD;
 				INFOPLIST_FILE = beaconTainan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = blindnavi.beaconTainan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
